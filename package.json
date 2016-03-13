@@ -1,0 +1,17 @@
+{
+  "name": "pc-seed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fis-conf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fis-optimizer-html-minifier": "0.0.9",
+    "fis3-hook-amd": "^0.1.14",
+    "fis3-hook-module": "^1.2.2",
+    "fis3-postpackager-loader": "^1.3.13"
+  }
+}
