@@ -1,0 +1,17 @@
+<!-- 
+避免每个p或者h1都要加一个类名定义样式，较好的一个方案是：
+-->
+.text {
+  p {
+    font-size: 14px;
+    line-height: 1.2em;
+  }
+}
+
+<!--
+然后：
+<div class="text">
+  <p></p>
+</div>
+
+-->
