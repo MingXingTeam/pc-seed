@@ -1,0 +1,71 @@
+<!--页脚-->
+<div id="footer">
+    <div class="wrap">
+        <div class="aboutus">
+            <h3>关于我们</h3>
+            <span class="aboutus-logo"></span> <span class="about_ul">
+				<ul>
+					<li class="first"><a href="http://www.dxzq.net/main/gydx/gsgk/gsjj/index.shtml?catalogId=1,9,23,28" target="_blank">公司简介</a>
+					</li>
+					<li><a href="http://www.dxzq.net/main/gydx/gsgk/zzjg/index.shtml?catalogId=1,9,23,30" target="_blank">组织架构</a>
+					</li>
+					<li><a href="http://www.dxzq.net/main/gydx/gsdt/gsxw/index.shtml?catalogId=1,9,24,31" target="_blank">公司新闻</a>
+					</li>
+					<li><a href="http://www.dxzq.net/main/gydx/gsgg/rcgg/index.shtml?catalogId=1,9,25,33" target="_blank">公司公告</a>
+					</li>
+					<li><a href="http://www.dxzq.net/main/gydx/tzzyd/tzzhd/index.shtml?catalogId=1,9,26,35" target="_blank">投资者园地</a>
+					</li>
+				</ul> </span>
+        </div>
+        <div class="guide">
+            <h3>服务指南</h3>
+            <span class="guide-logo"></span> <span class="guide_ul">
+				<ul>
+					<li class="first"><a href="http://www.dxzq.net/main/rjxz/pcrjxz/index.shtml?catalogId=1,241,242" target="_blank">软件下载</a>
+					</li>
+					<li><a href="http://www.dxzq.net/main/tzzjy/ywgz/index.shtml?catalogId=1,19,111" target="_blank">投资者教育</a>
+					</li>
+					<li><a href="http://www.dxzq.net/main/fxjszl/index.shtml?catalogId=1,20" target="_blank">风险警示专栏</a>
+					</li>
+					<li><a href="http://www.dxzq.net/main/fzjg/index.shtml?catalogId=1,222" target="_blank">分支机构</a>
+					</li>
+					<li><a href="http://www.dxzq.net/main/a/20150616/149.shtml" target="_blank">免责声明</a>
+					</li>
+				</ul> </span>
+        </div>
+        <div class="service">
+            <h3>业务相关</h3>
+            <span class="service-logo"></span> <span class="service_ul">
+				<ul>
+					<li class="first"><a href="http://www.dxzq.net/main/rzrq/sy/index.shtml?catalogId=1,10,59" target="_blank">融资融券</a>
+					</li>
+					<li><a href="http://www.dxzq.net/main/ggqq/ggxx/index.shtml?catalogId=1,12,74" target="_blank">个股期权(IB)</a>
+					</li>
+					<li><a href="http://www.dxzq.net/main/cwyw/tjgp/ywjs/index.shtml?catalogId=1,261,262,266" target="_blank">场外业务</a>
+					</li>
+					<li><a href="http://www.dxzq.net/main/jgzx/ywjs/index.shtml?catalogId=1,16,232" target="_blank">金股在线</a>
+					</li>
+					<li><a href="http://www.dxzq.net/main/xer/ywjs/index.shtml?catalogId=1,18,246" target="_blank">兴E融</a>
+					</li>
+				</ul> </span>
+        </div>
+        <div class="hot">
+            <h3>服务热线</h3>
+            <span class="phone">400-8888-993</span> <span class="link"> <a
+				class="btn" href="###"></a>
+				<div class="value">友情链接</div>
+				<ul class="list"
+					style="display:none;overflow: scroll;overflow-x:hidden;height:124px;">
+					{{each links as value index}}
+					<li>
+						<a href={{value.link}} style="padding: 0;" title={{value.name}} target="_blank"> 
+							<img alt={{value.name}}
+							src={{value.imgPath}} style="height:26px;width: 134px;" /> 
+						</a>
+					</li>
+					{{/each}}
+				</ul> </span>
+        </div>
+    </div>
+    <p>{{include './copyright'}}</p>
+</div>

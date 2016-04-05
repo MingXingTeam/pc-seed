@@ -1,0 +1,130 @@
+// 圆角
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+// 通过px返回em
+@function em($px, $base: 16) {
+  @return ($px / $base) + em;
+}
+
+// 通过px返回rem 默认设置body的font-size:125%
+@function rem($px, $base: 20) {
+  @return ($px / $base) + rem;
+}
+
+
+// 文本颜色
+$colour--text               : #494b4d;
+$colour--text--light        : #919599;
+$colour--text--dark         : #303233;
+$colour--text--brand        : #74b336;
+
+// 背景颜色
+// $colour--bg                 : $colour--cream;
+// $colour--bg--light          : $colour--white;
+// $colour--bg--dark           : $colour--slate;
+
+// 字体
+// $fonts--sans       : "Helvetica Neue", Helvetica, Arial, sans-serif;
+// $fonts--serif      : "Droid Serif", Georgia, serif;
+// $fonts--monospace  : Monaco, Courier, monospace;
+// $fonts             : $fonts--serif;
+
+// 清除浮动
+@mixin clearfix {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+    *zoom: 1;
+}
+
+// 元素大小
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+
+
+// 取消手机端点击高亮
+@mixin no-tap-highlight {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    outline: none;
+}
+
+// 隐藏元素(兼容屏幕阅读器和浏览器): h5bp.com/u
+@mixin hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+// 浏览器不可见 但屏幕阅读器可见：h5bp.com/v
+@mixin visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+// 图片占位
+@mixin image-replacement {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 150%;
+}
+
+// 响应式
+$fix-media-queries: false !default;
+
+@mixin respond-min($width) {
+    @if ($fix-media-queries) {
+        @if ($fix-media-queries >= $width) {
+            @content;
+        }
+    }
+    @else {
+        @media screen and (min-width: rem($width)) {
+            @content;
+        }
+    }
+}
+
+@mixin respond-min-max($w1, $w2)
+{
+    @if ($fix-media-queries) {
+        // nothing?
+    }
+    @else {
+        @media screen and (min-width: rem($w1)) and (max-width: rem($w2)) {
+            @content;
+        }
+    }
+}
+
+@mixin respond-max($width) {
+    @if ($fix-media-queries) {
+        @if ($fix-media-queries <= $width) {
+            @content;
+        }
+    }
+    @else {
+        @media screen and (max-width: rem($width)) {
+            @content;
+        }
+    }
+}

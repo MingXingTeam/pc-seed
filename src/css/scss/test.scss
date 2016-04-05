@@ -1,0 +1,40 @@
+@import 'partial/reset';
+@import 'partial/vars';
+@import 'partial/mixin';
+@import 'partial/_origin';
+
+body, html {
+	width: 100%;
+	height: 100%;
+	min-width: 980px;
+	font-size: 125%;
+}
+body {
+  font: 100% $font-stack;
+  background-color: $primary-color;
+  // height: em(12);
+  height: rem(12);
+}
+
+.slide {
+	width: 100%;
+	height: 220px;
+	background: $primary-bg-color;
+
+	.login-wrap {
+		width: 980px;
+		height: 100%;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.login {
+		width: 200px;
+		height: 100px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: $third-bg-color;
+		@include border-radius(4px);
+	}
+}

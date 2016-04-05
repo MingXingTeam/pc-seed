@@ -1,0 +1,57 @@
+/*
+Error: File to import not found or unreadable: partial/reset.
+       Load path: C:/Users/Administrator/Desktop/git/pcweb-seed/src/css/scss
+        on line 1 of ./scss/test.scss
+
+1: @import 'partial/reset';
+2: @import 'partial/vars';
+3: @import 'partial/mixin';
+4: @import 'partial/_origin';
+5: 
+6: body, html {
+
+Backtrace:
+./scss/test.scss:1
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/import_node.rb:67:in `rescue in import'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/import_node.rb:45:in `import'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/import_node.rb:28:in `imported_file'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/import_node.rb:37:in `css_import?'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/stack.rb:79:in `block in with_base'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/stack.rb:115:in `with_frame'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/stack.rb:79:in `with_base'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:158:in `visit'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `map'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:157:in `visit'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/visitors/perform.rb:8:in `visit'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/root_node.rb:36:in `css_tree'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/engine.rb:295:in `render_with_sourcemap'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `each'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/lib/sass/plugin/compiler.rb:328:in `block in watch'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/vendor/listen/lib/listen/listener.rb:252:in `call'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+D:/Program Files/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.16/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: partial/reset.\A        Load path: C:/Users/Administrator/Desktop/git/pcweb-seed/src/css/scss\A         on line 1 of ./scss/test.scss\A \A 1: @import 'partial/reset';\A 2: @import 'partial/vars';\A 3: @import 'partial/mixin';\A 4: @import 'partial/_origin';\A 5: \A 6: body, html {"; }
