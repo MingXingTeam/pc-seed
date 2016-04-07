@@ -1,1 +1,7 @@
 sass --watch ./scss:.
+
+在线编译：
+http://www.sassmeister.com/
+
+安装compass：
+(sudo ) gem install compass
