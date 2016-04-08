@@ -14,4 +14,4 @@ tmodjs -- 模版
 
 # update
 
-1.  增加CSS架构方案 -- 参考github模式
+1.  增加CSS架构方案 -- 参考github模式 位于pcweb-seed/bower_components/primer-css/
